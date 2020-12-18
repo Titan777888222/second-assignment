@@ -5,16 +5,16 @@
   .then(response => response.json())
   .then(json => {
 
-    let next = document.getElementById("button_color");
+    let next = document.querySelector("#liste");
     let i = 0;     
     
     next.addEventListener("click", function() {   
       i++; 
-      /* for ( i ; i < json.length; ) {        
-      };   */ 
+      console.log(Math.ceil(Math.random() * 1000)) //< json.length
 
         setTimeout( () => {              
-        console.log(json[i].text + " " + json[i].author )        
+        document.querySelector(".text1").innerHTML = (json[i].text); 
+        document.querySelector(".text2").innerHTML = (json[i].author);      
         }, 2000) 
       }
     )
