@@ -6,16 +6,21 @@
   .then(json => {
 
     let next = document.querySelector("#liste");
-    let i = 0;     
+        
+     next.addEventListener("click", function() {   
+     let i = Math.ceil( Math.random() * 1000)
+     let backgroundcolor = "#" + Math.ceil(Math.random() * 10000).toString(16);//получаем цвет
     
-    next.addEventListener("click", function() {   
-      i++; 
-      console.log(Math.ceil(Math.random() * 1000)) //< json.length
-
-        setTimeout( () => {              
+     console.log(backgroundcolor);    
+        
+      setTimeout( () => {              
         document.querySelector(".text1").innerHTML = (json[i].text); 
-        document.querySelector(".text2").innerHTML = (json[i].author);      
-        }, 2000) 
+        document.querySelector(".text2").innerHTML = (json[i].author); 
+        document.body.style.backgroundColor = backgroundcolor;
+        document.querySelector(".text1").style.color = backgroundcolor;
+        document.querySelector(".text2").style.color = backgroundcolor; 
+             
+        }, 800) 
       }
     )
 });
