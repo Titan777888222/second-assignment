@@ -1,4 +1,10 @@
-css переменная
+#color {
+    transition-property: background-color;
+    transition-duration: 3s;
+  }
+
+
+/* css переменная
 адаптивная верстка посмотреть длинное видео
 
 как убрать рамку в кнопке, после того, как ее активизировали
@@ -7,4 +13,4 @@ css переменная
     border-color: none;
 } 
 
-rem  em size or %
+ шрифт выставить с плавающими размерами rem  em size or % */

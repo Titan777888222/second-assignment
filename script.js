@@ -21,7 +21,10 @@
         document.body.style.backgroundColor = backgroundcolor;
         element_one.style.color = backgroundcolor;
         element_two.style.color = backgroundcolor; 
+
+        document.querySelector(".main").style.backgroundColor = backgroundcolor;
         next.style.backgroundColor = backgroundcolor; 
+        
             
         }, 800) 
       }

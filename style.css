@@ -7,6 +7,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; 
+    transition-property: background-color;
+    transition-duration: 3s;
 }
 .block{
     background-color: rgb(247, 241, 241);
@@ -21,6 +23,8 @@ body {
     padding: 15px;
     font-family: 'Redressed', cursive;
     font-size: x-large;
+    transition-property: color;
+    transition-duration: 3s;
 }
 .author{
     display: flex;
@@ -33,6 +37,8 @@ body {
     margin-right: 50px;
     text-align: center;
     padding-top: 3px;
+    transition-property: color;
+    transition-duration: 3s;
 }
 
 .elements{
@@ -60,6 +66,8 @@ body {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    transition-property: background-color;
+    transition-duration: 3s;
 }
 #liste:active 
 #liste:hover
