@@ -10,16 +10,19 @@
      next.addEventListener("click", function() {   
      let i = Math.ceil( Math.random() * 1000)
      let backgroundcolor = "#" + Math.ceil(Math.random() * 10000).toString(16);//получаем цвет
-    
+     let element_one = document.querySelector(".text1");
+     let element_two = document.querySelector(".text2");
+     
      console.log(backgroundcolor);    
         
       setTimeout( () => {              
-        document.querySelector(".text1").innerHTML = (json[i].text); 
-        document.querySelector(".text2").innerHTML = (json[i].author); 
+        element_one.innerHTML = (json[i].text); 
+        element_two.innerHTML = (json[i].author); 
         document.body.style.backgroundColor = backgroundcolor;
-        document.querySelector(".text1").style.color = backgroundcolor;
-        document.querySelector(".text2").style.color = backgroundcolor; 
-             
+        element_one.style.color = backgroundcolor;
+        element_two.style.color = backgroundcolor; 
+        next.style.backgroundColor = backgroundcolor; 
+            
         }, 800) 
       }
     )
